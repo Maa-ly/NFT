@@ -1,66 +1,28 @@
-## Foundry
+# Foundry-NFT Project
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Overview
 
-Foundry consists of:
+The **Foundry-NFT** project is a backend-focused decentralized application (dApp) that allows users to mint and interact with two types of NFTs: **Simple NFT** and **Mood NFT**.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+### Features
 
-## Documentation
+- **Mint Simple NFT**: Users can mint a basic NFT with metadata stored off-chain using IPFS.
+- **Mint Mood NFT**: Users can mint a dynamic, on-chain NFT that represents different moods using SVG images.
+- **Flip Mood**: The Mood NFT has a feature that allows users to change the mood of the NFT on-chain.
 
-https://book.getfoundry.sh/
+## Setup Instructions
 
-## Usage
+1. **Clone the Repository**: 
+   ```bash
+   git clone https://github.com/Maa-ly/NFT.git
+   cd Foundry-NFT
 
-### Build
+1. **Environment viables**
+  ETHERSCAN_API_KEY
+  PRIVATE_KEY  
 
-```shell
-$ forge build
-```
+ **Option 2 Use the safer method with cast**
+ cast wallet import your-account-name --interactive
 
-### Test
+name=name use saved your private key
 
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```

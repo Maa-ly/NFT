@@ -2,5 +2,16 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+remappings = ['@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/']
+ffi = false
+
+# foundry.toml
+
+# Combine both permissions into a single list
+fs_permissions = [
+    { access = "read", path = "./image/" },
+    { access = "read-write", path = "./broadcast" },
+]
+
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
